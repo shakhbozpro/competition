@@ -12,18 +12,28 @@ elChangeCategoriesList.addEventListener("click", (evt) => {
     if (evt.target.matches("#compact-btn")) {
         elSportCarsList.style.display = "none";
         elVanCarsList.style.display = "none";
-        elCompactCarsList.style.display = "block";
+        elCompactCarsList.style.display = "flex";
+        elSportCarsBtn.classList.remove("active");
+        elVanCarsBtn.classList.remove("active");
+        elCompactCarsBtn.classList.add("active");
     }
+
 
     if (evt.target.matches("#sport-btn")) {
         elCompactCarsList.style.display = "none";
         elVanCarsList.style.display = "none";
-        elSportCarsList.style.display = "block";
+        elSportCarsList.style.display = "flex";
+        elCompactCarsBtn.classList.remove("active");
+        elSportCarsBtn.classList.add("active");
+        elVanCarsBtn.classList.remove("active");
     }
 
-    if (clickedElement.matches("#van-btn")) {
+    if (evt.target.matches("#van-btn")) {
         elCompactCarsList.style.display = "none";
         elSportCarsList.style.display = "none";
-        elVanCarsList.style.display = "block";
+        elVanCarsList.style.display = "flex";
+        elCompactCarsBtn.classList.remove("active");
+        elSportCarsBtn.classList.remove("active");
+        elVanCarsBtn.classList.add("active");
     }
 })

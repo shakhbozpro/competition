@@ -36,7 +36,13 @@
 }
 
 .categories__btn-item .active {
-    @include main-button
+    @include main-button;
+
+    &:hover {
+        color: var(--main-green-color);
+        background-color: transparent;
+        border-color: var(--main-green-color);
+    }
 }
 
 .categories__item-btn {
@@ -48,6 +54,16 @@
     border: 1.5px solid #333333;
     border-radius: 100px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #333333;
+    }
+
+    &:active {
+        opacity: 0.6;
+        background-color: transparent;
+    }
 }
 
 .categories__cards-list {
@@ -65,6 +81,11 @@
     padding: 30px 24px;
     background-color: var(--main-gray-color);
     border-radius: 16px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: var(--main-green-color);
+    }
 
     &:nth-child(1) {
         margin-bottom: 20px;
@@ -160,6 +181,11 @@
     background: var(--main-green-color);
     border-radius: 100px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: var(--main-dark-green-color);
+    }
 }
 
 @include desctop-first(1210px) {

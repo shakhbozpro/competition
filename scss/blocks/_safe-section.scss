@@ -1,7 +1,7 @@
-.hero{
+.safe {
   margin-bottom: 160px;
 
-  &-wrapper{
+  &-wrapper {
     border: 1.5px solid #333333;
     border-radius: 20px;
     padding: 30px 0px 0 32px;
@@ -11,17 +11,17 @@
     background-size: 386px;
 
 
-    &__card{
+    &__card {
       max-width: 620px;
       padding-top: 10px;
       padding-bottom: 32px;
       // border: 1px solid red;
 
-      &-top{
+      &-top {
         max-width: 590px;
         margin-bottom: 94px;
 
-        &-title{
+        &-title {
           font-weight: var(--font-weight-600);
           font-size: 36px;
           line-height: 44px;
@@ -29,7 +29,7 @@
           margin-bottom: 10px;
         }
 
-        &-text{
+        &-text {
           font-weight: var(--font-weight-400);
           font-size: 16px;
           line-height: 24px;
@@ -38,11 +38,12 @@
       }
 
     }
-    &__list{
+
+    &__list {
       display: flex;
       gap: 8px;
 
-      &-item{
+      &-item {
         position: relative;
         max-width: 200px;
         width: 100%;
@@ -51,7 +52,7 @@
         border-radius: 16px;
         display: flex;
 
-        &::after{
+        &::after {
           position: absolute;
           top: 20px;
           right: 20px;
@@ -63,7 +64,7 @@
           content: "";
         }
 
-        &-text{
+        &-text {
           font-weight: var(--font-weight-500);
           line-height: 22px;
           display: flex;
@@ -71,13 +72,15 @@
           color: var(--main-white-color);
         }
 
-        &:nth-child(1)::after{
+        &:nth-child(1)::after {
           background-image: url("./../../images/safe-section-colba-icon.svg");
         }
-        &:nth-child(2)::after{
-          background-image: url("./../../images/safe-section-heart-icon.svg");
+
+        &:nth-child(2)::after {
+          background-image: url("./../../images/safe-section-heart.svg");
         }
-        &:nth-child(3)::after{
+
+        &:nth-child(3)::after {
           background-image: url("./../../images/safe-section-folder-locked.svg");
         }
       }
@@ -85,43 +88,44 @@
   }
 }
 
-@include desctop-first (834px){
-  .hero{
+@include desctop-first (834px) {
+  .safe {
     margin-bottom: 120px;
 
-    &-wrapper{
+    &-wrapper {
       padding: 30px 0px 0 24px;
       background-position: right 10px bottom;
       background-size: 284px 367px;
 
-      &__card{
+      &__card {
         max-width: 466px;
         padding-top: 0;
         padding-bottom: 30px;
 
-        &-top{
+        &-top {
           max-width: 466px;
           margin-bottom: 35px;
 
-          &-title{
+          &-title {
             line-height: 44px; // olib tashlash kerak
           }
 
-          &-text{
+          &-text {
             max-width: 447px;
             font-weight: 400; // olib tashlash kerak
           }
         }
 
       }
-      &__list{
+
+      &__list {
         gap: 8px;
 
-        &-item{
+        &-item {
           max-width: 140px;
           padding: 69px 10px 14px 10px;
 
-          &-text{
+          &-text {
             font-size: 14px;
           }
         }
@@ -132,33 +136,33 @@
 }
 
 
-@include desctop-first (390px){
-  .hero{
+@include desctop-first (390px) {
+  .safe {
     margin-bottom: 100px;
 
-    &-wrapper{
+    &-wrapper {
       padding: 24px 17px 24px 20px;
       background-image: url("./../../images/safe-section-mobile-green-circle.svg");
       background-position: calc(50% + 170px) calc(50% - 335px);
       background-size: 160px 160px;
 
 
-      &__card{
+      &__card {
         max-width: 321px;
         padding-bottom: 0px;
 
-        &-top{
+        &-top {
           max-width: 321px;
           margin-bottom: 40px;
 
-          &-title{
+          &-title {
             max-width: 183px;
             font-size: 24px;
             line-height: 29px;
             margin-bottom: 6px;
           }
 
-          &-text{
+          &-text {
             max-width: 321px;
             font-size: 12px;
             line-height: 20px;
@@ -166,15 +170,16 @@
         }
 
       }
-      &__list{
+
+      &__list {
         flex-direction: column;
         gap: 10px;
 
-        &-item{
+        &-item {
           max-width: 318px;
           padding: 70px 15px 14px 14px;
 
-          &-text{
+          &-text {
             font-size: 14px;
           }
         }
