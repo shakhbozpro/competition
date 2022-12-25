@@ -12,18 +12,18 @@ elChangeCategoriesList.addEventListener("click", (evt) => {
     if (evt.target.matches("#compact-btn")) {
         elSportCarsList.style.display = "none";
         elVanCarsList.style.display = "none";
-        elCompactCarsList.style.display = block;
+        elCompactCarsList.style.display = "block";
     }
 
     if (evt.target.matches("#sport-btn")) {
         elCompactCarsList.style.display = "none";
         elVanCarsList.style.display = "none";
-        elSportCarsList.style.display = block;
+        elSportCarsList.style.display = "block";
     }
 
     if (clickedElement.matches("#van-btn")) {
         elCompactCarsList.style.display = "none";
         elSportCarsList.style.display = "none";
-        elVanCarsList.style.display = block;
+        elVanCarsList.style.display = "block";
     }
 })
