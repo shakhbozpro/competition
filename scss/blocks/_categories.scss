@@ -1,0 +1,231 @@
+// Categories
+
+.categories {
+    padding-top: 133px;
+    padding-bottom: 160px;
+}
+
+.categories__infos {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.categories__heading {
+    font-weight: var(--font-weight-600);
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--main-white-color);
+    margin-bottom: 10px;
+}
+
+.categories__text {
+    margin-bottom: 40px;
+    line-height: 24px;
+    color: var(--main-white-color);
+}
+
+.categories__change-btns-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.categories__btn-item {
+    margin-right: 16px;
+}
+
+.categories__btn-item .active {
+    @include main-button
+}
+
+.categories__item-btn {
+    padding: 19px 40px;
+    font-weight: var(--font-weight-500);
+    line-height: 20px;
+    color: var(--main-white-color);
+    background-color: transparent;
+    border: 1.5px solid #333333;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.categories__cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.categories__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 387px;
+    width: 100%;
+    padding: 30px 24px;
+    background-color: var(--main-gray-color);
+    border-radius: 16px;
+
+    &:nth-child(1) {
+        margin-bottom: 20px;
+    }
+
+    &:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    &:nth-child(3) {
+        margin-bottom: 20px;
+    }
+}
+
+.categories__item-heading {
+    margin-bottom: 8px;
+    font-weight: var(--font-weight-600);
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-white-color);
+}
+
+.categories__item-car-type {
+    margin-bottom: 16px;
+    font-weight: var(--font-weight-500);
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--main-white-color);
+}
+
+.categories__item-img {
+    max-width: 367px;
+    width: 100%;
+    max-height: 210px;
+    margin-bottom: 16px;
+}
+
+.categories__card-infos-list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    color: var(--main-white-color);
+}
+
+.categories__card-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    font-weight: var(--font-weight-500);
+    line-height: 20px;
+    color: var(--main-white-color);
+
+    &:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    &:nth-child(4) {
+        margin-bottom: 0;
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 12px;
+        background-image: url(/images/cars_card-seats.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    &:nth-child(2)::before {
+        background-image: url(/images/cars_card-automatic.svg);
+    }
+
+    &:nth-child(3)::before {
+        background-image: url(/images/cars-card_years.svg);
+    }
+
+    &:nth-child(4)::before {
+        background-image: url(/images/cars_card-litr.svg);
+    }
+}
+
+.categories__view-link {
+    display: block;
+    max-width: 173px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 30px;
+    text-align: center;
+    color: var(--main-white-color);
+    background: var(--main-green-color);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+@include desctop-first(1210px) {
+
+    .categories {
+        padding: 120px 0;
+    }
+
+    .categories__text {
+        margin-bottom: 30px;
+    }
+
+    .categories__cards-list {
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+
+    .categories__item {
+        &:nth-child(4) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@include desctop-first(840px) {
+    .categories__cards-list {
+        flex-direction: column;
+    }
+
+    .categories__item {
+        margin: 0 auto;
+
+        &:nth-child(5) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@include desctop-first(541px) {
+    .categories {
+        padding: 100px 0;
+    }
+
+    .categories__heading {
+        margin-bottom: 6px;
+    }
+
+    .categories__change-btns-list {
+        margin-bottom: 16px;
+    }
+
+    .categories__btn-item .active {
+        padding: 14px 20px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .categories__item-btn {
+        padding: 14px 20px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@include desctop-first(395px) {
+    .categories__item-btn {
+        padding: 14px 10px;
+    }
+}
