@@ -6,7 +6,11 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/main.css">
+
    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
    <title>Document</title>
 </head>
 
@@ -124,6 +128,424 @@
          </div>
       </section>
       <!-- Hero section end -->
+
+
+      <!-- Categories section start -->
+      <section class="categories">
+         <div class="container">
+            <div class="categories-wrapper">
+               <div class="categories__infos">
+                  <h2 class="categories__heading">Choose the car of your dreams</h2>
+                  <p class="categories__text">
+                     We provide our customers with the most incredible driving emotions. That is why there are only
+                     world-class cars in our fleet
+                  </p>
+
+                  <ul class="categories__change-btns-list">
+                     <li class="categories__btn-item">
+                        <button id="compact-btn" class="categories__item-btn active">Compact</button>
+                     </li>
+
+                     <li class="categories__btn-item">
+                        <button id="sport-btn" class="categories__item-btn">Sports cars</button>
+                     </li>
+
+                     <li class="categories__btn-item">
+                        <button id="van-btn" class="categories__item-btn">Vans</button>
+                     </li>
+                  </ul>
+               </div>
+
+               <ul class="categories__cards-list categories__compact-cars-list" style="display: flex;">
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Ford Fiesta</h3>
+                     <span class="categories__item-car-type">Economy Car</span>
+                     <img class="categories__item-img" src="./images/main-1.png" alt="Economy car Ford Fiesta"
+                        width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Nissan Versa</h3>
+                     <span class="categories__item-car-type">Compact Car</span>
+                     <img class="categories__item-img" src="./images/main-2.png" alt="Compact Car Nissan Versa"
+                        width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Toyota Corolla</h3>
+                     <span class="categories__item-car-type">Mid-size Car</span>
+                     <img class="categories__item-img" src="./images/main-3.png" alt="Mid-size Car Toyota Corolla"
+                        width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Nissan Rogue</h3>
+                     <span class="categories__item-car-type">Mid-size SUV</span>
+                     <img class="categories__item-img" src="./images/main-4.png" alt="Mid-size SUV Nissan Rogue"
+                        width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Chevy Traverse</h3>
+                     <span class="categories__item-car-type">Full-size SUV </span>
+                     <img class="categories__item-img" src="./images/main-5.png" alt="Full-size SUV  Chevy Traverse"
+                        width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Nissan Altima</h3>
+                     <span class="categories__item-car-type">Full-size Car</span>
+                     <img class="categories__item-img" src="./images/main-1.png" alt="Full-size Car Nissan Altima"
+                        width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+               </ul>
+
+               <ul class="categories__cards-list categories__sport-cars-list" style="display: none;">
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Royce rolls ghost</h3>
+                     <span class="categories__item-car-type">Full-size Car</span>
+                     <img class="categories__item-img" src="./images/roys.png" alt="Full-size Car Royce rolls ghost"
+                        width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Mercedes s class</h3>
+                     <span class="categories__item-car-type">Full-size Car</span>
+                     <img class="categories__item-img" src="./images/merc.png" alt="Full-size Car Mercedes s class"
+                        width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Lamborghini urus</h3>
+                     <span class="categories__item-car-type">Mid-size Car</span>
+                     <img class="categories__item-img" src="./images/lambo.png" alt="Mid-size Car Lamborghini urus"
+                        width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Mercedes g63 amg</h3>
+                     <span class="categories__item-car-type">Mid-size SUV</span>
+                     <img class="categories__item-img" src="./images/gelik.png" alt="Mid-size SUV Mercedes g63 amg"
+                        width="367" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+               </ul>
+
+               <ul class="categories__cards-list categories__van-cars-list" style="display: none;">
+                  <li class=" categories__item">
+                     <h3 class="categories__item-heading">15-Passenger Ford Transit </h3>
+                     <span class="categories__item-car-type">Full-size Car</span>
+                     <img class="categories__item-img" src="./images/ford-transit.png"
+                        alt="Full-size Car 15-Passenger Ford Transit " width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Chrysler Pacifica</h3>
+                     <span class="categories__item-car-type">Full-size Car</span>
+                     <img class="categories__item-img" src="./images/chrysler.png" alt="Full-size Car Chrysler Pacifica"
+                        width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Chevy Silverado 4500HD</h3>
+                     <span class="categories__item-car-type">Mid-size Car</span>
+                     <img class="categories__item-img" src="./images/silverado.png"
+                        alt="Mid-size Car Chevy Silverado 4500HD" width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">12-Passenger Ford Transit</h3>
+                     <span class="categories__item-car-type">Mid-size SUV</span>
+                     <img class="categories__item-img" src="./images/transit-ford.png"
+                        alt="Mid-size SUV 12-Passenger Ford Transit" width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">15-Passenger Ford Transit </h3>
+                     <span class="categories__item-car-type">Mid-size SUV</span>
+                     <img class="categories__item-img" src="./images/third-ford.png"
+                        alt="Mid-size SUV 15-Passenger Ford Transit " width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+
+                  <li class="categories__item">
+                     <h3 class="categories__item-heading">Mercedes-Benz Sprinter</h3>
+                     <span class="categories__item-car-type">Mid-size SUV</span>
+                     <img class="categories__item-img" src="./images/merc-sprinter.png"
+                        alt="Mid-size SUV Mercedes-Benz Sprinter" width="357" height="210">
+
+                     <ul class="categories__card-infos-list">
+                        <li class="categories__card-info">5 Seats</li>
+                        <li class="categories__card-info">Automatic</li>
+                        <li class="categories__card-info">21+ Years</li>
+                        <li class="categories__card-info">1-lit / 2.5 km</li>
+                     </ul>
+                  </li>
+               </ul>
+
+               <a class="categories__view-link" href="#">View all cars</a>
+            </div>
+         </div>
+      </section>
+      <!-- Categories section end -->
+
+      <!-- Service section start -->
+      <section class="service">
+         <div class="container">
+            <div class="service-wrapper">
+               <div class="service__brands-wrapper mySwiper">
+                  <p class="service__brands-text">More than 50 brands of cars</p>
+                  <ul class="service__brands-list swiper-wrapper">
+                     <li class="service__brands-item swiper-slide">
+                        <a class="service__brands-link" href="#">
+                           <img src="./images/ford.svg" alt="Ford logo" width="140" height="40">
+                        </a>
+                     </li>
+
+                     <li class="service__brands-item swiper-slide">
+                        <a class="service__brands-link" href="#">
+                           <img src="./images/nissan.svg" alt="Nissan logo" width="140" height="40">
+                        </a>
+                     </li>
+
+                     <li class="service__brands-item swiper-slide">
+                        <a class="service__brands-link" href="#">
+                           <img src="./images/toyota.svg" alt="Toyota logo" width="140" height="40">
+                        </a>
+                     </li>
+
+                     <li class="service__brands-item swiper-slide">
+                        <a class="service__brands-link" href="#">
+                           <img src="./images/dodge.svg" alt="Dodge logo" width="140" height="40">
+                        </a>
+                     </li>
+
+                     <li class="service__brands-item swiper-slide">
+                        <a class="service__brands-link" href="#">
+                           <img src="./images/hyundai.svg" alt="Hyundai logo" width="140" height="40">
+                        </a>
+                     </li>
+
+                     <li class="service__brands-item swiper-slide">
+                        <a class="service__brands-link" href="#">
+                           <img src="./images/jeep.svg" alt="Jeep logo" width="140" height="40">
+                        </a>
+                     </li>
+                  </ul>
+                  <div class="swiper-pagination"></div>
+               </div>
+
+               <div class="service__texts">
+                  <h2 class="service__heading">Unparalleled service</h2>
+                  <p class="service__text">
+                     Whether you are looking for Newark Airport car rental, an insurance replacement vehicle or minivan
+                     to take on vacation Car rental has it all.
+                  </p>
+               </div>
+
+               <ul class="service__cards-list">
+                  <li class="service__item">
+                     <div class="service__item-texts-wrapper">
+                        <h3 class="service__item-heading">Book online, pay online</h3>
+                        <p class="service__item-text">
+                           Complete the booking process A-Z, with our easy online system
+                        </p>
+                     </div>
+                     <svg class="service__item-img" xmlns="http://www.w3.org/2000/svg" width="52" height="43"
+                        fill="none">
+                        <path fill="#299764" fill-rule="evenodd"
+                           d="m26 .374 18.184.514a6.46 6.46 0 0 1 6.236 5.724 93.586 93.586 0 0 1 0 21.276 6.46 6.46 0 0 1-6.236 5.724l-15.059.425v5.088H38.5a1.875 1.875 0 0 1 0 3.75h-25a1.875 1.875 0 1 1 0-3.75h9.375v-5.088l-15.06-.425a6.46 6.46 0 0 1-6.235-5.724 93.584 93.584 0 0 1 0-21.276A6.46 6.46 0 0 1 7.816.888L26 .374ZM8.5 25.375a1.875 1.875 0 0 0 0 3.75h35a1.875 1.875 0 1 0 0-3.75h-35Z"
+                           clip-rule="evenodd" />
+                     </svg>
+                  </li>
+
+                  <li class="service__item">
+                     <div class="service__item-texts-wrapper">
+                        <h3 class="service__item-heading">Guaranteed car reservation</h3>
+                        <p class="service__item-text">
+                           When you book with Car rental, you can be confident your car will be waiting for you
+                        </p>
+                     </div>
+                     <svg class="service__item-img" xmlns="http://www.w3.org/2000/svg" width="38" height="40"
+                        fill="none">
+                        <path fill="#299764"
+                           d="M21.902 1.018a5.625 5.625 0 0 0-5.804 0l-1.29.777A24.375 24.375 0 0 1 4.52 5.18l-.813.076A3.125 3.125 0 0 0 .875 8.37v4.11c0 6.946 2.82 13.595 7.815 18.423l8.138 7.868a3.125 3.125 0 0 0 4.344 0l8.138-7.868a25.625 25.625 0 0 0 7.815-18.424v-4.11a3.125 3.125 0 0 0-2.832-3.11l-.813-.077a24.375 24.375 0 0 1-10.288-3.386l-1.29-.777Z" />
+                     </svg>
+                  </li>
+
+                  <li class="service__item">
+                     <div class="service__item-texts-wrapper">
+                        <h3 class="service__item-heading">Unparalleled customer service</h3>
+                        <p class="service__item-text">
+                           We're here to help. We pride ourselves in our customer service
+                        </p>
+                     </div>
+                     <svg class="service__item-img" xmlns="http://www.w3.org/2000/svg" width="50" height="46"
+                        fill="none">
+                        <path fill="#299764"
+                           d="M20 .375a9.375 9.375 0 1 0 0 18.75 9.375 9.375 0 0 0 0-18.75ZM10 24.125A9.375 9.375 0 0 0 .625 33.5v2.97a3.842 3.842 0 0 0 3.223 3.793A100.24 100.24 0 0 0 20.54 41.57c.39-.002.627-.434.436-.774a17.42 17.42 0 0 1-2.226-8.547c0-1.968.325-3.86.924-5.625a.533.533 0 0 0-.479-.7 18.12 18.12 0 0 1-4.821-.877l-2.164-.707a4.374 4.374 0 0 0-1.358-.216H10ZM38.125 28.5a1.875 1.875 0 0 0-3.75 0v4.432c0 .6.287 1.163.772 1.516l2.5 1.818a1.875 1.875 0 1 0 2.206-3.032l-1.728-1.257V28.5Z" />
+                        <path fill="#299764" fill-rule="evenodd"
+                           d="M36.25 46C43.844 46 50 39.844 50 32.25S43.844 18.5 36.25 18.5 22.5 24.656 22.5 32.25 28.656 46 36.25 46Zm0-3.75c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10Z"
+                           clip-rule="evenodd" />
+                     </svg>
+                  </li>
+
+                  <li class="service__item">
+                     <div class="service__item-texts-wrapper">
+                        <h3 class="service__item-heading">No reservation or booking fees</h3>
+                        <p class="service__item-text">
+                           No cancellation fees if cancelled 24 hours prior to booking time
+                        </p>
+                     </div>
+                     <svg class="service__item-img" xmlns="http://www.w3.org/2000/svg" width="49" height="44"
+                        fill="none">
+                        <path fill="#299764" fill-rule="evenodd"
+                           d="m48.525 17.428.007 9.057a60.947 60.947 0 0 1-.247 2.585c-.168 1.439-1.337 2.6-2.806 2.763-4.6.514-9.359.514-13.958 0-1.469-.164-2.638-1.324-2.806-2.763a60.865 60.865 0 0 1 0-14.14c.168-1.439 1.337-2.6 2.806-2.763 4.6-.514 9.359-.514 13.958 0 1.469.164 2.638 1.324 2.806 2.763.098.831.178 1.664.24 2.498ZM38.5 18.25a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Z"
+                           clip-rule="evenodd" />
+                        <path fill="#299764"
+                           d="M47.009 7.1c.389.673-.34 1.426-1.113 1.34a67.112 67.112 0 0 0-14.792 0c-3.173.355-5.74 2.854-6.114 6.054a64.62 64.62 0 0 0 0 15.012c.375 3.2 2.941 5.7 6.114 6.054 4.877.545 9.916.545 14.792 0 .777-.087 1.513.672 1.12 1.35a12.428 12.428 0 0 1-9.449 6.124l-1.63.171c-8.277.871-16.625.814-24.89-.171l-1.08-.129a9.828 9.828 0 0 1-8.578-8.459 94.102 94.102 0 0 1 0-24.892 9.828 9.828 0 0 1 8.578-8.459l1.08-.129a111.625 111.625 0 0 1 24.89-.17l1.63.17c4.036.425 7.5 2.772 9.442 6.133Z" />
+                     </svg>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!-- Service section end -->
+
+
+      <!-- Safe section start -->
+      <section class="safe">
+         <div class="container">
+            <div class="safe-wrapper">
+               <div class="safe-wrapper__card">
+                  <div class="safe-wrapper__card-top">
+                     <h2 class="safe-wrapper__card-top-title">Car rental keeps you safe</h2>
+                     <p class="safe-wrapper__card-top-text">The safety of our employees and renters is our number one
+                        priority. In addition to being confident your vehicle is cleaned and sanitized every time you
+                        rent, you can also feel confident that we will take every opportunity to enhance the health and
+                        safety measures currently practiced in our operations.</p>
+                  </div>
+                  <ul class="safe-wrapper__list">
+                     <li class="safe-wrapper__list-item">
+                        <p class="safe-wrapper__list-item-text">Every car is thoroughly sanitized and cleaned</p>
+                     </li>
+                     <li class="safe-wrapper__list-item">
+                        <p class="safe-wrapper__list-item-text">All of our employees wear masks</p>
+                     </li>
+                     <li class="safe-wrapper__list-item">
+                        <p class="safe-wrapper__list-item-text">We stay up to date with all protocol from the CDC</p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <!-- Safe section end -->
+
    </main>
    <!-- Site main end -->
       <section class="feedback">
@@ -200,11 +622,11 @@
       </div>
    </footer>
    <!-- Site footer end -->
+
    <div class="header__modal">
       
    </div>
-   
-   
+
    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script src="./js/main.js"></script>
 </body>

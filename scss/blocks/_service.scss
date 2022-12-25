@@ -1,0 +1,142 @@
+.service {
+    padding: 160px 0;
+}
+
+
+
+.service__brands-wrapper {
+    margin-bottom: 160px;
+}
+
+.service__brands-text {
+    margin-bottom: 34px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-white-color);
+}
+
+.service__brands-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__texts {
+    max-width: 684px;
+    width: 100%;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    text-align: center;
+    color: var(--main-white-color);
+}
+
+.service__heading {
+    margin-bottom: 10px;
+    font-weight: var(--font-weight-600);
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.service__text {
+    line-height: 24px;
+}
+
+.service__cards-list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    color: var(--main-white-color);
+}
+
+.service__item {
+    position: relative;
+    max-width: 590px;
+    width: 100%;
+    padding: 40px 40px 40px 32px;
+    background-color: var(--main-gray-color);
+    border-radius: 20px;
+}
+
+.service__item-texts-wrapper {
+    max-width: 354px;
+    width: 100%;
+}
+
+.service__item-heading {
+    margin-bottom: 10px;
+    font-weight: var(--font-weight-500);
+    font-size: 32px;
+    line-height: 39px;
+}
+
+.service__item-text {
+    line-height: 24px;
+}
+
+.service__item-img {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+@include desctop-first(926px) {
+    .service__brands-wrapper {
+        margin-bottom: 120px;
+    }
+
+    .service__texts {
+        margin-bottom: 30px;
+    }
+
+    .service__item-texts-wrapper {
+        max-width: 255px;
+    }
+
+    .service__item-heading {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .service__item-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@include desctop-first(825px) {
+    .service__brands-wrapper {
+        margin-bottom: 100px;
+    }
+
+    .service__item-heading {
+        margin-bottom: 6px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .service__item-text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .service__cards-list {
+        grid-template-columns: repeat(1, auto);
+        gap: 10px;
+    }
+
+    .service__item {
+        margin: 0 auto;
+        padding: 30px 30px 30px 24px;
+    }
+
+    .service__item-texts-wrapper {
+        max-width: 240px;
+    }
+
+    .service__item-img {
+        top: 20px;
+        right: 25px;
+    }
+}
