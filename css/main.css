@@ -416,83 +416,83 @@ ul {
 }
 
 @media only screen and (max-width: 834px) {
-  .hero {
+  .safe {
     margin-bottom: 120px;
   }
-  .hero-wrapper {
+  .safe-wrapper {
     padding: 30px 0px 0 24px;
     background-position: right 10px bottom;
     background-size: 284px 367px;
   }
-  .hero-wrapper__card {
+  .safe-wrapper__card {
     max-width: 466px;
     padding-top: 0;
     padding-bottom: 30px;
   }
-  .hero-wrapper__card-top {
+  .safe-wrapper__card-top {
     max-width: 466px;
     margin-bottom: 35px;
   }
-  .hero-wrapper__card-top-title {
+  .safe-wrapper__card-top-title {
     line-height: 44px;
   }
-  .hero-wrapper__card-top-text {
+  .safe-wrapper__card-top-text {
     max-width: 447px;
     font-weight: 400;
   }
-  .hero-wrapper__list {
+  .safe-wrapper__list {
     gap: 8px;
   }
-  .hero-wrapper__list-item {
+  .safe-wrapper__list-item {
     max-width: 140px;
     padding: 69px 10px 14px 10px;
   }
-  .hero-wrapper__list-item-text {
+  .safe-wrapper__list-item-text {
     font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 390px) {
-  .hero {
+  .safe {
     margin-bottom: 100px;
   }
-  .hero-wrapper {
+  .safe-wrapper {
     padding: 24px 17px 24px 20px;
     background-image: url("./../../images/safe-section-mobile-green-circle.svg");
     background-position: calc(50% + 170px) calc(50% - 335px);
     background-size: 160px 160px;
   }
-  .hero-wrapper__card {
+  .safe-wrapper__card {
     max-width: 321px;
     padding-bottom: 0px;
   }
-  .hero-wrapper__card-top {
+  .safe-wrapper__card-top {
     max-width: 321px;
     margin-bottom: 40px;
   }
-  .hero-wrapper__card-top-title {
+  .safe-wrapper__card-top-title {
     max-width: 183px;
     font-size: 24px;
     line-height: 29px;
     margin-bottom: 6px;
   }
-  .hero-wrapper__card-top-text {
+  .safe-wrapper__card-top-text {
     max-width: 321px;
     font-size: 12px;
     line-height: 20px;
   }
-  .hero-wrapper__list {
+  .safe-wrapper__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
   }
-  .hero-wrapper__list-item {
+  .safe-wrapper__list-item {
     max-width: 318px;
     padding: 70px 15px 14px 14px;
   }
-  .hero-wrapper__list-item-text {
+  .safe-wrapper__list-item-text {
     font-size: 14px;
   }
 }

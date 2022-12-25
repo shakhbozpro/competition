@@ -86,7 +86,7 @@
 }
 
 @include desctop-first (834px){
-  .hero{
+  .safe{
     margin-bottom: 120px;
 
     &-wrapper{
@@ -133,7 +133,7 @@
 
 
 @include desctop-first (390px){
-  .hero{
+  .safe{
     margin-bottom: 100px;
 
     &-wrapper{
