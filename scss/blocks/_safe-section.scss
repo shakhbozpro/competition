@@ -10,12 +10,10 @@
     background-position: right 70px bottom;
     background-size: 386px;
 
-
     &__card{
       max-width: 620px;
       padding-top: 10px;
       padding-bottom: 32px;
-      // border: 1px solid red;
 
       &-top{
         max-width: 590px;
@@ -40,28 +38,34 @@
     }
     &__list{
       display: flex;
-      gap: 8px;
+      gap: 10px;
 
       &-item{
         position: relative;
         max-width: 200px;
         width: 100%;
-        padding: 79px 15px 15px 15px;
+        padding: 20px 15px 15px 15px;
         background-color: var(--main-gray-color);
         border-radius: 16px;
         display: flex;
+        flex-direction: column;
+        height: 160px;
+        justify-content: space-between;
 
-        &::after{
-          position: absolute;
-          top: 20px;
-          right: 20px;
+        &:hover{
+          background-color: var(--main-green-color);
+        }
+
+        &-icon-box{
+          margin-left: calc(100% - 35px);
           width: 30px;
           height: 30px;
-          background-repeat: no-repeat;
-          background-size: auto;
-          background-position: center;
-          content: "";
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
+
+
 
         &-text{
           font-weight: var(--font-weight-500);
@@ -69,16 +73,6 @@
           display: flex;
           align-items: flex-end;
           color: var(--main-white-color);
-        }
-
-        &:nth-child(1)::after{
-          background-image: url("./../../images/safe-section-colba-icon.svg");
-        }
-        &:nth-child(2)::after{
-          background-image: url("./../../images/safe-section-heart-icon.svg");
-        }
-        &:nth-child(3)::after{
-          background-image: url("./../../images/safe-section-folder-locked.svg");
         }
       }
     }
@@ -90,8 +84,8 @@
     margin-bottom: 120px;
 
     &-wrapper{
-      padding: 30px 0px 0 24px;
-      background-position: right 10px bottom;
+      padding: 30px 10px 0 24px;
+      background-position: right 0px bottom;
       background-size: 284px 367px;
 
       &__card{
@@ -109,7 +103,6 @@
 
           &-text{
             max-width: 447px;
-            font-weight: 400; // olib tashlash kerak
           }
         }
 
@@ -118,8 +111,9 @@
         gap: 8px;
 
         &-item{
+          height: 165px;
           max-width: 140px;
-          padding: 69px 10px 14px 10px;
+          padding: 20px 10px 14px 10px;
 
           &-text{
             font-size: 14px;
@@ -131,6 +125,53 @@
 
 }
 
+@include desctop-first (460px){
+  .safe{
+    margin-bottom: 110px;
+
+    &-wrapper{
+      padding: 24px 17px 24px 20px;
+      background-image: url("./../../images/safe-section-mobile-green-circle.svg");
+      background-position: calc(50% + 185px) calc(50% - 310px);
+      background-size: 160px 160px;
+
+
+      &__card{
+        max-width: 360px;
+        padding-bottom: 0px;
+
+        &-top{
+          max-width: 350px;
+
+          &-title{
+            max-width: 243px;
+            font-size: 24px;
+            line-height: 29px;
+          }
+
+          &-text{
+            font-size: 12.5px;
+            line-height: 22px;
+          }
+        }
+
+      }
+      &__list{
+        flex-direction: column;
+
+        &-item{
+          max-width: 360px;
+          height: 106px;
+
+          &-text{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @include desctop-first (390px){
   .safe{
@@ -139,7 +180,7 @@
     &-wrapper{
       padding: 24px 17px 24px 20px;
       background-image: url("./../../images/safe-section-mobile-green-circle.svg");
-      background-position: calc(50% + 170px) calc(50% - 335px);
+      background-position: calc(50% + 170px) calc(50% - 325px);
       background-size: 160px 160px;
 
 
@@ -172,7 +213,7 @@
 
         &-item{
           max-width: 318px;
-          padding: 70px 15px 14px 14px;
+          padding: 20px 15px 14px 14px;
 
           &-text{
             font-size: 14px;
@@ -181,5 +222,4 @@
       }
     }
   }
-
 }
