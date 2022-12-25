@@ -1,0 +1,26 @@
+// FONTS
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin_cyrillic-regular.woff2') format('woff2'),
+        url('../fonts/montserrat-v25-latin_cyrillic-regular.woff') format('woff');
+}
+
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v25-latin_cyrillic-500.woff2') format('woff2'),
+        url('../fonts/montserrat-v25-latin_cyrillic-500.woff') format('woff');
+}
+
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v25-latin_cyrillic-600.woff2') format('woff2'),
+        url('../fonts/montserrat-v25-latin_cyrillic-600.woff') format('woff');
+}
