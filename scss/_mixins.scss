@@ -19,3 +19,12 @@
    background-color: var(--main-green-color);
    border-radius: 100px;
 }
+@mixin text-style($fw,$fsz,$clr){
+   font-family: 'Montserrat';
+   font-weight: var(--font-weight-500);
+   font-size: $fsz;
+   line-height: 22px;
+   color: var(--main-white-color);
+
+}
+
