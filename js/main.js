@@ -2,9 +2,28 @@ const elChangeCategoriesList = document.querySelector(".categories__change-btns-
 const elCompactCarsBtn = document.querySelector("#compact-btn");
 const elSportCarsBtn = document.querySelector("#sport-btn");
 const elVanCarsBtn = document.querySelector("#van-btn");
+const elServiceWrapper = document.querySelector(".service-wrapper");
 const elCompactCarsList = document.querySelector(".categories__compact-cars-list");
 const elSportCarsList = document.querySelector(".categories__sport-cars-list");
 const elVanCarsList = document.querySelector(".categories__van-cars-list");
+
+var swiper = new Swiper(".mySwiper", {
+    breakpoints: {
+        834: {
+            enabled: false,
+            slidesPerView: 6,
+
+        },
+        320: {
+            enabled: true,
+            slidesPerView: 3,
+            spaceBetween: 40
+        }
+
+    }
+})
+
+
 
 
 elChangeCategoriesList.addEventListener("click", (evt) => {
